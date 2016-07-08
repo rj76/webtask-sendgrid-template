@@ -1,0 +1,22 @@
+{
+  "author": "Richard Jansen <richard@jansenit.com>",
+  "name": "webtask-sendgrind-template",
+  "description": "Send a sendgrid template using webtask.io",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sendgrid/webtask-sendgrid-template.git"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "optionalDependencies": {},
+  "dependencies": {
+    "base64url": "^1.0.6",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "sandboxjs": "^2.6.1",
+    "sendgrid": "^3.0.7"
+  }
+}

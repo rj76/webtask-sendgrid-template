@@ -7,7 +7,9 @@ describe('Test sendgrid mail template', function() {
 		mail({
 			b: base64url.encode('Hello world'),
 			s: base64url.encode('Test subject'),
-			t: 'richard@jansenit.com'
+			t: 'richard@jansenit.com',
+			c: 'stormy',
+			secrets: {SG_KEY: process.env.SENDGRID_API_KEY}
 		}, function(err, response) {
 			assert(response.statusCode, 202);
 		});
